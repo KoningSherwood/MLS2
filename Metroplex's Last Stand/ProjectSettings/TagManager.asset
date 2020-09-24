@@ -5,6 +5,11 @@ TagManager:
   serializedVersion: 2
   tags:
   - Turret
+  - Manager
+  - SnapManager
+  - TowerManager
+  - MoneyManager
+  - PreTower
   layers:
   - Default
   - TransparentFX

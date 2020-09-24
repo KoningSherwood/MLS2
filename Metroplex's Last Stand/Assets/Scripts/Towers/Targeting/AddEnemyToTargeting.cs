@@ -20,6 +20,10 @@ public class AddEnemyToTargeting : MonoBehaviour
         if (o.gameObject.tag == nameTurretTag)
         {
             o.gameObject.GetComponent<Targeting>().enemiesInRange.Remove(gameObject);
+            if(gameObject == o.gameObject.GetComponent<Targeting>().currentTarget)
+            {
+                o.gameObject.GetComponent<Targeting>().currentTarget = null;
+            }
         }
     }
 }

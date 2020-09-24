@@ -17,7 +17,10 @@ public class Targeting : MonoBehaviour
 
     void Update()
     {
-
+        if(currentTarget == null && enemiesInRange.Count > 0)
+        {
+            currentTarget = enemiesInRange[0];
+        }
 
         if(currentTarget != null)
         {
