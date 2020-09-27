@@ -161,6 +161,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nameTurretTag: Turret
+  nameTeslaTag: 
 --- !u!54 &409191423
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -579,6 +580,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nameTurretTag: Turret
+  nameTeslaTag: 
 --- !u!54 &1453491214
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -784,6 +786,24 @@ MonoBehaviour:
   currentTarget: {fileID: 0}
   Range: 30
   enemiesInRange: []
+--- !u!114 &2069229280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2069229278}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f97fcdaa54dfb5499dc6243049ba715, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fireRate: 1
+  projectile: {fileID: 6310535633119306331, guid: 38e0920071e7ccc489070b64088771e0,
+    type: 3}
+  projectileTravelSpeed: 5
+  targeting: {fileID: 0}
+  shotPoint: {fileID: 723751848}
 --- !u!135 &2069229281
 SphereCollider:
   m_ObjectHideFlags: 0
