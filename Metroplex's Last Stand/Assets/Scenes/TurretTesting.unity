@@ -161,7 +161,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nameTurretTag: Turret
-  nameTeslaTag: 
+  nameTeslaTag: Tesla
 --- !u!54 &409191423
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -580,7 +580,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nameTurretTag: Turret
-  nameTeslaTag: 
+  nameTeslaTag: Tesla
 --- !u!54 &1453491214
 Rigidbody:
   m_ObjectHideFlags: 0
