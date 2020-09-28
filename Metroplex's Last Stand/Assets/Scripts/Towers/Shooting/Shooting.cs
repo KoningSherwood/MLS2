@@ -7,6 +7,7 @@ public class Shooting : MonoBehaviour
     private float shotTimer;
     public float fireRate;
     public GameObject projectile;
+    public GameObject firedProjectile;
     public float projectileTravelSpeed;
     public Targeting targeting;
     public Transform shotPoint;
@@ -25,7 +26,8 @@ public class Shooting : MonoBehaviour
         shotTimer += Time.deltaTime;
         if(shotTimer >= fireRate && targeting.currentTarget != null)
         {
-            Instantiate(projectile, shotPoint.position, new Quaternion(0,0,0, Quaternion.identity.w));
+            firedProjectile = Instantiate(projectile, shotPoint.position, Quaternion.identity);
+            firedProjectile.GetComponent<Projectile>().LookAtTarget(targeting.currentTarget);
             shotTimer = 0;
         }
     }

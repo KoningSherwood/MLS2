@@ -17,7 +17,7 @@ public class AddEnemyToTargeting : MonoBehaviour
 
         if (o.gameObject.tag == nameTeslaTag)
         {
-            o.gameObject.GetComponent<Targeting>().enemiesInRange.Add(gameObject);
+            o.gameObject.GetComponent<Tesla>().enemiesInRange.Add(gameObject);
         }
     }
 
@@ -25,7 +25,7 @@ public class AddEnemyToTargeting : MonoBehaviour
     {
         if (o.gameObject.tag == nameTurretTag)
         {
-            o.gameObject.GetComponent<Tesla>().enemiesInRange.Remove(gameObject);
+            o.gameObject.GetComponent<Targeting>().enemiesInRange.Remove(gameObject);
             if(gameObject == o.gameObject.GetComponent<Targeting>().currentTarget)
             {
                 o.gameObject.GetComponent<Targeting>().currentTarget = null;

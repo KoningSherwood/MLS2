@@ -5,15 +5,14 @@ using UnityEngine;
 public class Projectile : MonoBehaviour
 {
     public float projectileTravelSpeed;
-    public Targeting targeting;
-
-    void Awake()
-    {
-        
-    }
 
     void Update()
     {
-        transform.position += projectileTravelSpeed * Vector3.forward * Time.deltaTime;
+        transform.Translate(projectileTravelSpeed * Vector3.forward * Time.deltaTime);
+    }
+
+    public void LookAtTarget(GameObject target)
+    {
+        transform.LookAt(target.transform);
     }
 }
