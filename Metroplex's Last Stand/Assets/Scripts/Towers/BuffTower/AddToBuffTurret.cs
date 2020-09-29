@@ -8,7 +8,7 @@ public class AddToBuffTurret : MonoBehaviour
 
     public void OnTriggerEnter(Collider o)
     {
-        if(o.gameObject.tag == buffTurretName)
+        if(o.gameObject.tag == buffTurretName && gameObject.tag != buffTurretName)
         {
             o.gameObject.GetComponent<BuffTowers>().turretsInRange.Add(gameObject);
         }
@@ -16,7 +16,7 @@ public class AddToBuffTurret : MonoBehaviour
 
     public void OnTriggerExit(Collider o)
     {
-        if (o.gameObject.tag == buffTurretName)
+        if (o.gameObject.tag == buffTurretName && gameObject.tag != buffTurretName)
         {
             o.gameObject.GetComponent<BuffTowers>().turretsInRange.Remove(gameObject);
         }

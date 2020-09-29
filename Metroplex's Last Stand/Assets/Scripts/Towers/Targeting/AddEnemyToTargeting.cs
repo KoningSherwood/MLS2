@@ -5,7 +5,6 @@ using UnityEngine;
 public class AddEnemyToTargeting : MonoBehaviour
 {
     public string nameTurretTag;
-    public string nameTeslaTag;
 
     public void OnTriggerEnter(Collider o)
     {
@@ -13,11 +12,6 @@ public class AddEnemyToTargeting : MonoBehaviour
         if (o.gameObject.tag == nameTurretTag)
         {
             o.gameObject.GetComponent<Targeting>().enemiesInRange.Add(gameObject);
-        }
-
-        if (o.gameObject.tag == nameTeslaTag)
-        {
-            o.gameObject.GetComponent<Tesla>().enemiesInRange.Add(gameObject);
         }
     }
 
@@ -30,11 +24,6 @@ public class AddEnemyToTargeting : MonoBehaviour
             {
                 o.gameObject.GetComponent<Targeting>().currentTarget = null;
             }
-        }
-
-        if(o.gameObject.tag == nameTeslaTag)
-        {
-            o.gameObject.GetComponent<Tesla>().enemiesInRange.Remove(gameObject);
         }
     }
 }
