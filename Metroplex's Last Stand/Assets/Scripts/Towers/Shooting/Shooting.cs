@@ -52,4 +52,12 @@ public class Shooting : MonoBehaviour
             }
         }
     }
+
+    public void BuffUp(float attackSpeedBuff, float attackDamageBuff)
+    {
+        if(Buffed == true)
+        {
+            fireRate -= fireRate * attackSpeedBuff;
+        }
+    }
 }

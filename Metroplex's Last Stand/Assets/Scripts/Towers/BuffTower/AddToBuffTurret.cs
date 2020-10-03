@@ -11,6 +11,7 @@ public class AddToBuffTurret : MonoBehaviour
         if(o.gameObject.tag == buffTurretName && gameObject.tag != buffTurretName)
         {
             o.gameObject.GetComponent<BuffTowers>().turretsInRange.Add(gameObject);
+            GetComponent<Shooting>().BuffUp(o.gameObject.GetComponent<BuffTowers>().attackSpeedBuff, o.gameObject.GetComponent<BuffTowers>().attackDamageBuff);
         }
     }
 
