@@ -439,7 +439,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &463993748
 PrefabInstance:
@@ -740,7 +740,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   placing: 0
   placePos: {x: 0, y: 0, z: 0}
-  nodeOffset: {x: 0, y: 2.5, z: 0}
+  nodeOffset: {x: 0, y: 0.5, z: 0}
   blueprint: {fileID: 0}
   lastPlacedTower: {fileID: 0}
   lastHoveredNode: {fileID: 0}
@@ -748,7 +748,7 @@ MonoBehaviour:
   towerToPlace: 0
   preTowers:
   - {fileID: 7397565962604317163, guid: 78b83d4be763d7147b9f66286273ae4e, type: 3}
-  - {fileID: 7397565962604317163, guid: 78b83d4be763d7147b9f66286273ae4e, type: 3}
+  - {fileID: 5151062925223805464, guid: e54d1177af7fd434a88857f407f15a8a, type: 3}
   towers:
   - {fileID: 7294197468628326338, guid: 1dbaa10b8c90e0145af7a33ad03b8847, type: 3}
   - {fileID: 7403821682120724905, guid: faf9c79e0db99de4eb96ccbe844b63be, type: 3}
@@ -767,7 +767,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &724517775
 GameObject:
@@ -1778,7 +1778,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &7375380961889803487
 PrefabInstance:
@@ -1840,7 +1840,7 @@ PrefabInstance:
     - target: {fileID: 1623669952704129418, guid: 802641f3d207f624caae90547565de2d,
         type: 3}
       propertyPath: m_RootOrder
-      value: 15
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 1623669952704129418, guid: 802641f3d207f624caae90547565de2d,
         type: 3}
