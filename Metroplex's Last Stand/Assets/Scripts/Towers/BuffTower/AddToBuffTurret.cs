@@ -5,14 +5,22 @@ using UnityEngine;
 public class AddToBuffTurret : MonoBehaviour
 {
     public string buffTurretName;
+    private int buffTowersInRange;
+    private GameObject buffTowerParticle;
 
     public void OnTriggerEnter(Collider o)
     {
         if(o.gameObject.tag == buffTurretName && gameObject.tag != buffTurretName)
         {
             o.gameObject.GetComponent<BuffTowers>().turretsInRange.Add(gameObject);
-            GetComponent<Shooting>().BuffUp(o.gameObject.GetComponent<BuffTowers>().attackSpeedBuff, o.gameObject.GetComponent<BuffTowers>().attackDamageBuff);
+            buffTowersInRange += 1;
+            if(GetComponent<Shooting>().Buffed == false)
+            {
+                GetComponent<Shooting>().BuffUp(o.gameObject.GetComponent<BuffTowers>().attackSpeedBuff, o.gameObject.GetComponent<BuffTowers>().attackDamageBuff);
+                buffTowerParticle = Instantiate(o.gameObject.GetComponent<BuffTowers>().buffParticle);
+            }
         }
+        print("Trigger entered");
     }
 
     public void OnTriggerExit(Collider o)
@@ -20,6 +28,11 @@ public class AddToBuffTurret : MonoBehaviour
         if (o.gameObject.tag == buffTurretName && gameObject.tag != buffTurretName)
         {
             o.gameObject.GetComponent<BuffTowers>().turretsInRange.Remove(gameObject);
+            buffTowersInRange -= 1;
+            if(buffTowersInRange == 0)
+            {
+                GetComponent<Shooting>().Buffed = false;
+            }
         }
     }
 }
