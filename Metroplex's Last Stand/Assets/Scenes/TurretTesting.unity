@@ -161,7 +161,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nameTurretTag: Turret
-  nameTeslaTag: Tesla
 --- !u!54 &409191423
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -580,7 +579,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nameTurretTag: Turret
-  nameTeslaTag: Tesla
 --- !u!54 &1453491214
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -781,6 +779,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0fc75efffcac6fb478b8ac46bfcfcef7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tesla: 0
   turretHead: {fileID: 1391129442}
   turretStand: {fileID: 308649762}
   currentTarget: {fileID: 0}
@@ -798,6 +797,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f97fcdaa54dfb5499dc6243049ba715, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tesla: 0
   fireRate: 1
   projectile: {fileID: 6310535633119306331, guid: 38e0920071e7ccc489070b64088771e0,
     type: 3}
@@ -805,6 +805,7 @@ MonoBehaviour:
   projectileTravelSpeed: 5
   targeting: {fileID: 0}
   shotPoint: {fileID: 723751848}
+  Buffed: 0
 --- !u!135 &2069229281
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -818,3 +819,48 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2069229282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2069229278}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fe190e6d3277794aa5cb529768edf7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 0
+  nodeUnderTurret: {fileID: 0}
+--- !u!114 &2069229283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2069229278}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31a92b1a4cd77d647846f2dd88e1b593, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buffTurretName: buffTurret
+--- !u!114 &2069229284
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2069229278}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81e937d31c8768840a3921046c9f6cbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cost: 0
+  sellButton: {fileID: 0}
+  manager: {fileID: 0}
+  moneyManager: {fileID: 0}
+  towermanager: {fileID: 0}
+  sellButtonActive: 0
