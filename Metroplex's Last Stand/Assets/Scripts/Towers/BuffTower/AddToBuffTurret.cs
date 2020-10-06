@@ -20,7 +20,6 @@ public class AddToBuffTurret : MonoBehaviour
                 buffTowerParticle = Instantiate(o.gameObject.GetComponent<BuffTowers>().buffParticle);
             }
         }
-        print("Trigger entered");
     }
 
     public void OnTriggerExit(Collider o)
