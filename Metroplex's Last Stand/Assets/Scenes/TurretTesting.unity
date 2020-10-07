@@ -139,8 +139,8 @@ GameObject:
   - component: {fileID: 409191426}
   - component: {fileID: 409191425}
   - component: {fileID: 409191424}
-  - component: {fileID: 409191423}
   - component: {fileID: 409191422}
+  - component: {fileID: 409191423}
   m_Layer: 0
   m_Name: Capsule (1)
   m_TagString: Untagged
@@ -175,7 +175,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 10
   m_CollisionDetection: 0
 --- !u!136 &409191424
 CapsuleCollider:
@@ -482,8 +482,8 @@ GameObject:
   - component: {fileID: 1453491211}
   - component: {fileID: 1453491210}
   - component: {fileID: 1453491209}
-  - component: {fileID: 1453491214}
   - component: {fileID: 1453491213}
+  - component: {fileID: 1453491214}
   m_Layer: 0
   m_Name: Capsule
   m_TagString: Untagged
@@ -593,7 +593,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 80
   m_CollisionDetection: 0
 --- !u!1 &1456513440
 GameObject:
@@ -802,7 +802,7 @@ MonoBehaviour:
   projectile: {fileID: 6310535633119306331, guid: 38e0920071e7ccc489070b64088771e0,
     type: 3}
   firedProjectile: {fileID: 0}
-  projectileTravelSpeed: 5
+  projectileTravelSpeed: 50
   targeting: {fileID: 0}
   shotPoint: {fileID: 723751848}
   Buffed: 0

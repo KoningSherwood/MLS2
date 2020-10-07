@@ -17,7 +17,7 @@ public class AddToBuffTurret : MonoBehaviour
             if(GetComponent<Shooting>().Buffed == false)
             {
                 GetComponent<Shooting>().BuffUp(o.gameObject.GetComponent<BuffTowers>().attackSpeedBuff, o.gameObject.GetComponent<BuffTowers>().attackDamageBuff);
-                buffTowerParticle = Instantiate(o.gameObject.GetComponent<BuffTowers>().buffParticle);
+                buffTowerParticle = Instantiate(o.gameObject.GetComponent<BuffTowers>().buffParticle, gameObject.transform.position, Quaternion.identity);
             }
         }
     }
