@@ -31,6 +31,7 @@ public class AddToBuffTurret : MonoBehaviour
             if(buffTowersInRange == 0)
             {
                 GetComponent<Shooting>().Buffed = false;
+                GetComponent<Shooting>().BuffUp(0,0);
             }
         }
     }

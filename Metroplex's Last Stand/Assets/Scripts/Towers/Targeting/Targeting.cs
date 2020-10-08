@@ -11,7 +11,7 @@ public class Targeting : MonoBehaviour
     public int Range;
     public List<GameObject> enemiesInRange;
 
-    void Start()
+    void Awake()
     {
         GetComponent<SphereCollider>().radius = Range;
     }
@@ -30,10 +30,6 @@ public class Targeting : MonoBehaviour
                 turretHead.transform.LookAt(currentTarget.transform);
                 turretStand.transform.rotation = new Quaternion (0, turretHead.transform.rotation.y, 0, turretStand.transform.rotation.w);
             }
-        }
-        else
-        {
-
         }
     }
 }
