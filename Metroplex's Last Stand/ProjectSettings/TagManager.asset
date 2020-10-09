@@ -10,6 +10,7 @@ TagManager:
   - TowerManager
   - MoneyManager
   - PreTower
+  - BuffTurret
   layers:
   - Default
   - TransparentFX

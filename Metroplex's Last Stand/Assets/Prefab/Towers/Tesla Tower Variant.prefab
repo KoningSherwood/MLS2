@@ -1,0 +1,241 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &724454370
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 724454371}
+  m_Layer: 0
+  m_Name: ShotPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &724454371
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 724454370}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0, z: 3.09}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8601577048590494470}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!135 &190949709
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1427153977436783016}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &190949710
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1427153977436783016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81e937d31c8768840a3921046c9f6cbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cost: 0
+  sellButton: {fileID: 0}
+  manager: {fileID: 0}
+  moneyManager: {fileID: 0}
+  towermanager: {fileID: 0}
+  sellButtonActive: 0
+--- !u!114 &190949711
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1427153977436783016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fe190e6d3277794aa5cb529768edf7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 1000
+  nodeUnderTurret: {fileID: 0}
+--- !u!114 &190949712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1427153977436783016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31a92b1a4cd77d647846f2dd88e1b593, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buffTurretName: BuffTurret
+--- !u!114 &190949713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1427153977436783016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fc75efffcac6fb478b8ac46bfcfcef7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tesla: 0
+  turretHead: {fileID: 0}
+  turretStand: {fileID: 0}
+  currentTarget: {fileID: 0}
+  Range: 30
+  enemiesInRange: []
+--- !u!114 &190949714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1427153977436783016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f97fcdaa54dfb5499dc6243049ba715, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tesla: 1
+  baseFireRate: 1
+  baseDamage: 1
+  projectile: {fileID: 0}
+  teslaProjectile: {fileID: 6242364320639899235, guid: 1cbc53766bae6704094ae887afad6894,
+    type: 3}
+  projectileTravelSpeed: 0
+  targeting: {fileID: 0}
+  shotPoint: {fileID: 724454371}
+  Buffed: 0
+--- !u!1001 &6984988383636920481
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -4216859302048453862, guid: 9c5cd8c6e3518174dab93182a36baccb,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -21.33873
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 9c5cd8c6e3518174dab93182a36baccb,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 9c5cd8c6e3518174dab93182a36baccb,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.7347221
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 9c5cd8c6e3518174dab93182a36baccb,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 9c5cd8c6e3518174dab93182a36baccb,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 9c5cd8c6e3518174dab93182a36baccb,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 9c5cd8c6e3518174dab93182a36baccb,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 9c5cd8c6e3518174dab93182a36baccb,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 9c5cd8c6e3518174dab93182a36baccb,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 9c5cd8c6e3518174dab93182a36baccb,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 9c5cd8c6e3518174dab93182a36baccb,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 9c5cd8c6e3518174dab93182a36baccb,
+        type: 3}
+      propertyPath: m_Name
+      value: Tesla Tower
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 9c5cd8c6e3518174dab93182a36baccb,
+        type: 3}
+      propertyPath: m_TagString
+      value: Turret
+      objectReference: {fileID: 0}
+    - target: {fileID: 1707243787577406375, guid: 9c5cd8c6e3518174dab93182a36baccb,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1707243787577406375, guid: 9c5cd8c6e3518174dab93182a36baccb,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1707243787577406375, guid: 9c5cd8c6e3518174dab93182a36baccb,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 1707243787577406375, guid: 9c5cd8c6e3518174dab93182a36baccb,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 1707243787577406375, guid: 9c5cd8c6e3518174dab93182a36baccb,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9c5cd8c6e3518174dab93182a36baccb, type: 3}
+--- !u!1 &1427153977436783016 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 9c5cd8c6e3518174dab93182a36baccb,
+    type: 3}
+  m_PrefabInstance: {fileID: 6984988383636920481}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &8601577048590494470 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1707243787577406375, guid: 9c5cd8c6e3518174dab93182a36baccb,
+    type: 3}
+  m_PrefabInstance: {fileID: 6984988383636920481}
+  m_PrefabAsset: {fileID: 0}

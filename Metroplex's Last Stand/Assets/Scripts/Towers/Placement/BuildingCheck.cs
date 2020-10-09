@@ -15,20 +15,23 @@ public class BuildingCheck : MonoBehaviour
 
     void Update()
     {
-        if (towerManage.placing == true)
+        if (towerManage.lastPlacedTower != null)
         {
-            if (towerManage.lastPlacedTower != null)
+            if (towerManage.lastPlacedTower.transform.position == transform.position + towerManage.nodeOffset)
             {
-                if (towerManage.lastPlacedTower.transform.position == gameObject.transform.position)
-                {
-                    turret = towerManage.lastPlacedTower;
-                }
+                turret = towerManage.lastPlacedTower;
+                turret.GetComponent<TowerHealth>().nodeUnderTurret = gameObject;
             }
         }
 
-        if (turret != null)
+        if (turret != null && occupied != true)
         {
             occupied = true;
+        }
+
+        if (turret == null && occupied == true)
+        {
+            occupied = false;
         }
     }
 }
